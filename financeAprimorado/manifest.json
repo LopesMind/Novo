@@ -2,14 +2,22 @@
   "name": "Minhas Finanças",
   "short_name": "Finanças",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#7e73db",
   "theme_color": "#7e73db",
   "icons": [
     {
       "src": "./icon/Icon_Bird_512x512.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon/Icon_Bird_512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
