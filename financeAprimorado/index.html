@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minhas Finanças</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="topo">
+            <h1>Minhas Finanças</h1>
+            <select id="mesSelecionado">
+                <option value="Janeiro">Janeiro</option>
+                <option value="Fevereiro">Fevereiro</option>
+                <option value="Março">Março</option>
+                <option value="Abril">Abril</option>
+                <option value="Maio">Maio</option>
+                <option value="Junho">Junho</option>
+                <option value="Julho">Julho</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Setembro">Setembro</option>
+                <option value="Outubro">Outubro</option>
+                <option value="Novembro">Novembro</option>
+                <option value="Dezembro">Dezembro</option>
+            </select>
+        </header>
+
+        <!-- 4 Cards de Resumo lado a lado -->
+        <section class="grid-resumo">
+            <div class="cards">
+                <span>Renda</span>
+                <h2 id="resumoRenda">R$ 0,00</h2>
+            </div>
+            <div class="cards">
+                <span>Despesas Fixas</span>
+                <h2 id="resumoFixas">R$ 0,00</h2>
+            </div>
+            <div class="cards">
+                <span>Despesas Variáveis</span>
+                <h2 id="resumoVariaveis">R$ 0,00</h2>
+            </div>
+            <div class="cards">
+                <span>Saldo Final</span>
+                <h2 id="SaldoFinal">R$ 0,00</h2>
+            </div>
+        </section>
+
+        <!-- Área Principal: Formulário + Gráfico -->
+        <section class="grid-principal">
+            <div class="cards">
+                <h3>Lançar Valores</h3>
+
+                <label>Renda</label>
+                <input type="number" id="renda" placeholder="Digite sua renda">
+
+                <label>Despesas Fixas</label>
+                <input type="number" id="DespesasFixas" placeholder="Digite aqui">
+
+                <label>Despesas Variáveis</label>
+                <input type="number" id="DespesasVariaveis" placeholder="Digite aqui">
+
+                <button id="btnCalcular">Salvar e Calcular</button>
+            </div>
+
+         
+<div class="cards">
+    <h3>Distribuição dos Gastos</h3>
+    <div id="barraGastos" style="width: 100%; height: 25px; background: #eee; border-radius: 12px; overflow: hidden; display: flex; margin: 15px 0;">
+        <div id="fatiaFixas" style="background: #f0ad4e; width: 0%; transition: 0.4s;"></div>
+        <div id="fatiaVariaveis" style="background: #d9534f; width: 0%; transition: 0.4s;"></div>
+        <div id="fatiaSaldo" style="background: #28a745; width: 0%; transition: 0.4s;"></div>
+    </div>
+    <p style="font-size: 14px; color: #555;">
+        🟠 Fixas &nbsp;|&nbsp; 🔴 Variáveis &nbsp;|&nbsp; 🟢 Saldo Livre
+    </p>
+</div>
+    <section class="grid-principal">
+            <div class="cards" style="text-align: center;">
+                <p id="textoBigMac" style="margin: 0; font-size: 17px; font-weight: bold; color: #333;">
+                    🍔 Você consegue comprar 0 Big Macs com o saldo deste mês!
+                </p>
+            </div>
+
+            <div class="cards" style="text-align: center;">
+                <p id="textoSalarioMinimo" style="margin: 0; font-size: 17px; font-weight: bold; color: #333;">
+                    💰 Sobraram 0 salários mínimos neste mês!
+                </p>
+            </div>
+        </section>
+    <!-- script -->
+   
+    <script src="script.js"></script>
+</body>
+</html>
