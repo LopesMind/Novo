@@ -7,7 +7,7 @@
   "theme_color": "#7e73db",
   "icons": [
     {
-      "src": "https://flaticon.com",
+      "src": "./icon/Icon_Bird_512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
